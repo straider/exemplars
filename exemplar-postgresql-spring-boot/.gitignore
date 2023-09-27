@@ -1,0 +1,38 @@
+# Build Tools
+#============
+target/
+build/
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+node_modules/
+
+# IDEs
+#=====
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+# Eclipse
+.metadata
+.settings
+.project
+.classpath
+RemoteSystemsTempFiles
+# IDEA
+.idea/
+*.ipr
+*.iws
+*.iml
+
+# Configuration Files
+#====================
+.DS_Store
+.envrc
+/configuration/settings-??.xml
+local.sh
+
+# Tools
+#======
+/tools/flyway/conf/*.conf
