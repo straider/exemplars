@@ -1,0 +1,29 @@
+spring:
+    datasource:
+        # default connection pool
+        hikari:
+            connectionTimeout: 20000
+            maximumPoolSize: 5
+        # PostgreSQL
+        url: ${JDBC_URL:jdbc:postgresql://localhost:5432/mydb}
+        username: ${JDBC_USERNAME:admin}
+        password: ${JDBC_PASSWORD}
+    jpa:
+        hibernate:
+            # Hibernate DDL auto: create, create-drop, validate, update
+            ddl-auto: create-drop
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                jdbc:
+                    lob:
+                        non_contextual_creation: true
+
+app:
+    db:
+        init:
+            enabled: false
+
+server:
+    port: ${SERVICE_PORT:10000}
+    forward-headers-strategy: framework
