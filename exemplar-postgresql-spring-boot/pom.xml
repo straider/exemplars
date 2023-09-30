@@ -7,14 +7,14 @@
 
     <artifactId>exemplar-postgresql-spring-boot</artifactId>
     <packaging>jar</packaging>
-    <name>Spring Data JPA and PostgreSQL Exemplar</name>
+    <name>Example of Spring Boot Web &amp; Data JPA with PostgreSQL</name>
     <version>1.0.0</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.1.4</version>
-        <relativePath/> <!-- lookup parent from repository, not local -->
+        <relativePath/> <!-- Lookup parent from repository, not from local !-->
     </parent>
 
     <properties>
@@ -28,19 +28,19 @@
 
     <dependencies>
 
-        <!-- Spring MVC -->
+        <!-- Spring Boot Starter Web !-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Spring Data JPA -->
+        <!-- Spring Boot Starter Data JPA !-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!-- Swagger UI -->
+        <!-- Swagger UI !-->
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
@@ -54,14 +54,14 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- Spring Test -->
+        <!-- Spring Boot Starter Test !-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
 
-        <!-- optional, for development -->
+        <!-- Spring Boot DevTools - optional, for development !-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>

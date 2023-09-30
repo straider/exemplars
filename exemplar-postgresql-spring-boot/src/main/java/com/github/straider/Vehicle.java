@@ -27,7 +27,7 @@ public class Vehicle {
     @Column(name = "year")
     private Number year;
 
-    @Column(name = "type")
+    @Column(name = "fuel")
     private String fuel; // TODO: Should it be an enumerated field instead of String?
 
     @Column(name = "price")
