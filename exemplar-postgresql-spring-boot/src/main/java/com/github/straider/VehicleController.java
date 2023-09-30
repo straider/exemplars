@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v1/vehicles")
 public class VehicleController {
 
     @Autowired
@@ -58,29 +58,29 @@ public class VehicleController {
         return service.findById(id);
     }
 
-    @GetMapping("/vehicles/make/{make}")
+    @GetMapping("/make/{make}")
     public List<Vehicle> findByMake(@PathVariable String make) {
         return service.findByMake(make);
     }
 
-    @GetMapping("/vehicles/model/{model}")
+    @GetMapping("/model/{model}")
     public List<Vehicle> findByModel(@PathVariable String model) {
         return service.findByModel(model);
     }
 
-    @GetMapping("/vehicles/fuel/{fuel}")
+    @GetMapping("/fuel/{fuel}")
     public List<Vehicle> findByFuelContaining(@PathVariable String fuel) {
         return service.findByFuelContaining(fuel);
     }
 
-    @GetMapping("/vehicles/sold-on-or-after/{date}")
+    @GetMapping("/sold-on-or-after/{date}")
     public List<Vehicle> findBySoldOnAfter(
             @PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate date)
     {
         return service.findBySoldOnAfter(date);
     }
 
-    @GetMapping("/vehicles/sold")
+    @GetMapping("/sold")
     public ResponseEntity<List<Vehicle>> findVehiclesSold() {
         try {
             List<Vehicle> vehicles = service.findVehiclesSold();
