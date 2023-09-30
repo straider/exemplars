@@ -13,7 +13,7 @@ spring:
     jpa:
         hibernate:
             # Hibernate DDL auto: create, create-drop, validate, update
-            ddl-auto: create-drop
+            ddl-auto: create
         properties:
             hibernate:
                 dialect: org.hibernate.dialect.PostgreSQLDialect
