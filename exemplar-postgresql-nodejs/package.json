@@ -1,0 +1,19 @@
+{
+  "name": "exemplar-postgresql-nodejs",
+  "version": "1.0.0",
+  "description": "Example of Node.JS & Sequelize with PostgreSQL.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node.JS",
+    "express",
+    "sequelize",
+    "PpostgreSQL",
+    "REST",
+    "API"
+  ],
+  "author": "Jose Carlos (JC)",
+  "license": "ISC"
+}
